@@ -1,23 +1,26 @@
 //fonts
-$primary-font: 'Cairo', sans-serif;
-$secondary-font: 'Roboto', sans-serif;
+:root{
+--primary-font: 'Cairo', sans-serif;
+--secondary-font: 'Roboto', sans-serif;
 
 //font-sizes
-$h1-font-size: 60px;
-$h2-font-size: 50px;
-$h3-font-size: 30px;
-$paragraf-font-size: 18px;
-$paragraf-font-size-small: 14px;
+--base-font-size: 18px;
+--h1-font-size: 3.33rem;
+--h2-font-size: 2.77rem;
+--h3-font-size: 1.66rem;
+--paragraf-font-size: 1rem;
+--paragraf-font-size-small: .77rem;
 
 //colors
-$white: #fff; //headings
-$black: #000;
+--white: #fff; //headings
+--black: #000;
 
-$silver: #BCBCBC; //for p text mainly
-$silver-dark: #6F6F6F; //for subsection devider, bg-color of odd rows in table
+--silver: #BCBCBC; //for p text mainly
+--silver-dark: #6F6F6F; //for subsection devider, bg-color of odd rows in table
 
-$green: #50FA7B; //buttons, rectangle devider, bg-color for table header,
-$orange: #FFB86C; //buttons, rectangle devider
-$red: #E74315; //buttons, rectangle devider
+--green: #50FA7B; //buttons, rectangle devider, bg-color for table header,
+--orange: #FFB86C; //buttons, rectangle devider
+--red: #E74315; //buttons, rectangle devider
 
-$cyan: #00FFF0; //footer links
+--cyan: #00FFF0; //footer links
+}

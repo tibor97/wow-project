@@ -1,21 +1,21 @@
 h1, h2, h3 {
-	font-family: $primary-font;
+	font-family: var(--primary-font);
 }
 
 h1 {
-	font-size: $h1-font-size;
-	color: $white;
+	font-size: var(--h1-font-size);
+	color: var(--white);
 }
 
 h2 {
-	font-size: $h2-font-size;
-	color: $white;
+	font-size: var(--h2-font-size);
+	color: var(--white);
 }
 
 h3 {
-	font-size: $h3-font-size;
+	font-size: var(--h3-font-size);
 }
 
 p {
-	font-family: $secondary-font;
+	font-family: var(--secondary-font);
 }
