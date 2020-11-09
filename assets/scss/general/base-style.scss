@@ -1,0 +1,21 @@
+h1, h2, h3 {
+	font-family: $primary-font;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	color: $white;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	color: $white;
+}
+
+h3 {
+	font-size: $h3-font-size;
+}
+
+p {
+	font-family: $secondary-font;
+}
