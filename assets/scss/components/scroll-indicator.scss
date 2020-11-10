@@ -1,0 +1,25 @@
+.c-scroll-indicator {
+	font-family: var(--secondary-font);
+	color: var(--silver);
+	font-size: var(--paragraf-font-size-extra-small);
+	transform: rotate(-90deg);
+	position: absolute;
+	left: 3%;
+    bottom: 10%;
+    padding-bottom: .2rem;
+
+    @include min-mq($min-tablet) {
+		bottom: 20%;
+		font-size: var(--paragraf-font-size-small);
+	}
+    
+	&::after {
+		content: "";
+	    height: 1px;
+	    width: 3.6rem;
+	    background-color: var(--red);
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	}
+}

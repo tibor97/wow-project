@@ -1,15 +1,17 @@
-//fonts
 :root{
+//fonts
 --primary-font: 'Cairo', sans-serif;
 --secondary-font: 'Roboto', sans-serif;
 
 //font-sizes
 --base-font-size: 18px;
---h1-font-size: 3.33rem;
---h2-font-size: 2.77rem;
---h3-font-size: 1.66rem;
+--h1-font-size-desktop: 3.33rem;
+--h1-font-size-tablet: 2rem;
+//--h2-font-size: 2.77rem;
+//--h3-font-size: 1.66rem;
 --paragraf-font-size: 1rem;
 --paragraf-font-size-small: .77rem;
+--paragraf-font-size-extra-small: .66rem;
 
 //colors
 --white: #fff; //headings
@@ -24,3 +26,7 @@
 
 --cyan: #00FFF0; //footer links
 }
+
+//breakpoints
+$min-desktop: 1279px;
+$min-tablet: 767px;

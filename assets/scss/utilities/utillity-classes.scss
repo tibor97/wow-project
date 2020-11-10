@@ -1,0 +1,35 @@
+.u-vertical-divider {
+	color: var(--silver);
+	position: relative;
+	padding-right: .25rem;
+
+	@include min-mq($min-desktop) {
+		padding-right: .5rem;
+	}
+
+	&::after {
+		content: "";
+	    width: 1px;
+	    height: 50%;
+	    background-color: var(--orange);
+	    position: absolute;
+	    top: 50%;
+	    right: -5%;
+	    transform: translate(0, -50%);
+	}
+}
+
+.u-text-divider-bottom {
+	position: relative;
+
+	&::after {
+		content: "";
+	    height: 1px;
+	    width: 4.7rem;
+	    background-color: var(--red);
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);	
+	}
+}
