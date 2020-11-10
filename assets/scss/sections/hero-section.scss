@@ -1,0 +1,10 @@
+.hero-section {
+	background-image: url("../images/bg-image-hero-section.jpg");
+	background-size: cover; 
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 5px;
+}

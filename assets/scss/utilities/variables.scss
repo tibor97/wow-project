@@ -4,10 +4,10 @@
 --secondary-font: 'Roboto', sans-serif;
 
 //font-sizes
---base-font-size: 18px;
---h1-font-size: 3.33rem;
---h2-font-size: 2.77rem;
---h3-font-size: 1.66rem;
+--h1-font-size-desktop: 3.33rem;
+--h1-font-size-tablet: 2rem;
+//--h2-font-size: 2.77rem;
+//--h3-font-size: 1.66rem;
 --paragraf-font-size: 1rem;
 --paragraf-font-size-small: .77rem;
 
@@ -23,4 +23,8 @@
 --red: #E74315; //buttons, rectangle devider
 
 --cyan: #00FFF0; //footer links
+
+//breakpoints
+--min-desktop: 1023px;
+--min-tablet: 767px;
 }

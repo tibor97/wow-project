@@ -1,7 +1,17 @@
 //utilities
 @import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/utillity-classes';
 
 //general
 @import 'general/fonts';
 @import 'general/base-style';
 @import 'general/reset';
+@import 'general/layout.scss';
+
+//components
+@import 'components/three-squares-divider';
+@import 'components/scroll-indicator';
+
+//sections
+@import 'sections/hero-section';

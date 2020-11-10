@@ -3,8 +3,18 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: var(--h1-font-size);
 	color: var(--white);
+	text-align: center;
+	padding: 20px 0;
+
+	@media screen and (min-width: 767px) {
+		font-size: var(--h1-font-size-tablet);
+	}
+
+	@media screen and (min-width: 1400px) {
+		font-size: var(--h1-font-size-desktop);
+		line-height: 70px;
+	}
 }
 
 h2 {
@@ -18,4 +28,14 @@ h3 {
 
 p {
 	font-family: var(--secondary-font);
+	color: var(--silver);
+	padding: 10px;
+	text-align: center;
+	font-size: var(--paragraf-font-size-small);
+	line-height: 20px;
+
+	@media screen and (min-width: 767px) {
+		font-size: var(--paragraf-font-size);
+		padding: 20px;
+	}
 }
