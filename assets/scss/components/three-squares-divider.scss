@@ -1,11 +1,11 @@
 .c-square-divider {
-	width: 11px;
-	height: 11px;
+	width: 0.61rem;
+	height: 0.61rem;
 	background-color: var(--orange);
 	position: relative;
-	
-	@media screen and (min-width: 767px) {
-		margin: 10px 0;
+
+	@include min-mq($min-tablet) {
+		margin: 0.55rem 0;
 	}
 
 	&::before, 
@@ -13,8 +13,8 @@
 		content: "";
 		position: absolute;
 		top: 0;
-		width: 11px;
-		height: 11px;
+		width: 0.61rem;
+		height: 0.61rem;
 	}
 
 	&::before {

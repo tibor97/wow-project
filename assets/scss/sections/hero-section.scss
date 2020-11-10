@@ -1,4 +1,4 @@
-.hero-section {
+.c-section--hero-section {
 	background-image: url("../images/bg-image-hero-section.jpg");
 	background-size: cover; 
 	height: 100vh;
@@ -6,5 +6,6 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 5px;
+	padding: .01rem;
+	position: relative;
 }

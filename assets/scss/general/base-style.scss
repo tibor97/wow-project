@@ -2,40 +2,29 @@ h1, h2, h3 {
 	font-family: var(--primary-font);
 }
 
-h1 {
+.heading-1 {
 	color: var(--white);
 	text-align: center;
-	padding: 20px 0;
+	padding: .2rem;
 
-	@media screen and (min-width: 767px) {
+	@include min-mq($min-tablet) {
 		font-size: var(--h1-font-size-tablet);
 	}
 
-	@media screen and (min-width: 1400px) {
+	@include min-mq($min-desktop) {
 		font-size: var(--h1-font-size-desktop);
-		line-height: 70px;
 	}
-}
-
-h2 {
-	font-size: var(--h2-font-size);
-	color: var(--white);
-}
-
-h3 {
-	font-size: var(--h3-font-size);
 }
 
 p {
 	font-family: var(--secondary-font);
 	color: var(--silver);
-	padding: 10px;
+	padding: .77rem;
 	text-align: center;
 	font-size: var(--paragraf-font-size-small);
-	line-height: 20px;
 
 	@media screen and (min-width: 767px) {
 		font-size: var(--paragraf-font-size);
-		padding: 20px;
+		padding: 1.1rem;
 	}
 }
