@@ -2,7 +2,7 @@ h1, h2, h3 {
 	font-family: var(--primary-font);
 }
 
-.heading-1 {
+h1, .heading-1 {
 	color: var(--white);
 	text-align: center;
 	padding: .2rem;
@@ -23,7 +23,7 @@ p {
 	text-align: center;
 	font-size: var(--paragraf-font-size-small);
 
-	@media screen and (min-width: 767px) {
+	@include min-mq($min-tablet) {
 		font-size: var(--paragraf-font-size);
 		padding: 1.1rem;
 	}

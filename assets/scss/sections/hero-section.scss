@@ -1,7 +1,7 @@
 .c-section--hero-section {
 	background-image: url("../images/bg-image-hero-section.jpg");
 	background-size: cover; 
-	height: 100vh;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;

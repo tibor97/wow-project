@@ -18,12 +18,12 @@
 	}
 
 	&::before {
-		left: -11px;
+		left: 0.61rem;
 		background-color: var(--red);
 	}
 
 	&::after {
-		right: -11px;
+		right: 0.61rem;
 		background-color: var(--green);
 	}
 }
