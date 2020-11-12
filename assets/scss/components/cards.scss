@@ -1,0 +1,38 @@
+.c-cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 1rem;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 40%;
+		margin-bottom: 3rem;
+	}
+}
+
+.c-cards--card {
+	flex: 0 1 90%;
+	margin: .55rem 0;
+	transition: background .4s;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 40%;
+		margin: 1rem 1.1rem;
+	}
+
+	&:not(.card-border) {
+		&:hover {
+			background: rgba(255, 255, 255, 0.1);
+			cursor: pointer;
+			box-shadow: 0 0.22rem 4.38rem rgba(0, 0, 0, 0.4);
+		}
+	}
+}
+
+.card-border__red {
+	@include card-border (var(--red));
+}
+
+.card-border__orange {
+	@include card-border (var(--orange));
+}

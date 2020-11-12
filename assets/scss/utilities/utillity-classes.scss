@@ -1,3 +1,4 @@
+//dividers
 .u-vertical-divider {
 	color: var(--silver);
 	position: relative;
@@ -19,17 +20,46 @@
 	}
 }
 
-.u-text-divider-bottom {
-	position: relative;
+.u-text-divider-bottom__red {
+	@include text-devider-bottom (var(--red-divider));
+}
 
-	&::after {
-		content: "";
-	    height: 1px;
-	    width: 4.7rem;
-	    background-color: var(--red);
-	    position: absolute;
-	    bottom: 0;
-	    left: 50%;
-	    transform: translateX(-50%);	
-	}
+.u-text-divider-bottom__green {
+	@include text-devider-bottom (var(--green-divider));
+}
+
+.u-text-divider-bottom__orange {
+	@include text-devider-bottom (var(--orange-divider));
+}
+
+//colors
+.u-white {
+	color: var(--white);
+}
+
+.u-color-red {
+	color: var(--red);
+}
+
+.u-color-orange {
+	color: var(--orange);
+}
+
+.u-color-green {
+	color: var(--green);
+}
+
+//display properties
+.u-hidden {
+	visibility: hidden;
+}
+
+//font style
+.u-italic {
+	font-style: italic;
+	font-weight: var(--font-weight-medium);
+}
+
+.u-small-paragraf {
+	font-size: var(--paragraf-font-size-small);
 }

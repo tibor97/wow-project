@@ -1,0 +1,31 @@
+.affixes--bg-wrapper {
+	background-image: url("../images/bg-image-affixes-section.jpg");
+	background-size: cover;
+	padding: 4.1rem 0 0;
+}
+
+.affixes--bg-wrapper__gradient {
+	background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
+}
+
+.c-affixes-article {
+	max-width: 66.6rem;
+	margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    position: relative;
+
+	&::after {
+		content: "";
+	    height: 1px;
+	    width: 90%;
+	    background-color: var(--silver-dark);
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);	
+	}
+}

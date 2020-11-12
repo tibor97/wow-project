@@ -9,3 +9,41 @@
     @content;
   }
 }
+
+@mixin text-devider-bottom($color) {
+	position: relative;
+
+	&::after {
+		content: "";
+	    height: 2px;
+	    width: 4.7rem;
+	    background-color: $color;
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);	
+	}
+}
+
+@mixin card-border($color) {
+	border: 2px solid $color;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+
+	&::before {
+		content: 'US & EU';
+		background-color: $color;
+		position: absolute;
+		top: -1px;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: .88rem;
+		color: var(--white);
+		font-family: var(--secondary-font);
+		border-radius: 0 0 .55rem .55rem;
+		width: 8rem;
+		font-weight: var(--font-weight-bold);
+		text-align: center;
+		padding: .1rem 0; 
+	}
+}

@@ -1,0 +1,31 @@
+.l-content-container-wrapper {
+	width:100%;
+	padding: 1.1rem 1.3rem;
+
+	@include min-mq($min-tablet) {
+		padding: 1.1rem 5.1rem;
+	}
+
+	&.l-button-wrapper {
+		@include min-mq($min-tablet) {
+			padding: 0 5.1rem;
+		}
+	}
+}
+
+.l-button-wrapper {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	@include min-mq($min-tablet) {
+		flex-direction: row;
+	}
+}
+
+.l-table-wrapper {
+	overflow-x: auto;
+	width: 100%;
+	margin: 2rem 0;
+}
