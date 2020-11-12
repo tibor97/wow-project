@@ -1,0 +1,29 @@
+.c-table--header {
+	background-color: var(--green);
+	color: var(--grey-very-dark);
+}
+
+.c-table--body {
+	color: var(--white);
+
+	tr:nth-of-type(even) {
+		background-color: var(--grey-very-dark);
+	}
+
+	tr:nth-of-type(odd) {
+		background-color: transparent;
+	}
+
+	tr:nth-of-type(4) {
+		background-color: var(--grey);
+	}
+}
+
+.c-table--cell {
+	padding: .25rem 1.1rem;
+	width: 25%;
+
+	@include min-mq($min-tablet) {
+		padding: .25rem 2.77rem;
+	}
+}

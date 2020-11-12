@@ -1,23 +1,9 @@
-.c-cards {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin-bottom: 1rem;
-
-	@include min-mq($min-tablet) {
-		flex: 0 1 40%;
-		margin-bottom: 3rem;
-	}
-}
-
-.c-cards--card {
-	flex: 0 1 90%;
+.c-card {
 	margin: .55rem 0;
 	transition: background .4s;
 
 	@include min-mq($min-tablet) {
-		flex: 0 1 40%;
-		margin: 1rem 1.1rem;
+		margin: 1rem 0;
 	}
 
 	&:not(.card-border) {
@@ -29,10 +15,10 @@
 	}
 }
 
-.card-border__red {
+.card-border__danger {
 	@include card-border (var(--red));
 }
 
-.card-border__orange {
+.card-border__warning {
 	@include card-border (var(--orange));
 }

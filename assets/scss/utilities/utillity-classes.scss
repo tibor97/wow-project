@@ -20,15 +20,15 @@
 	}
 }
 
-.u-text-divider-bottom__red {
+.u-text-divider-bottom__danger {
 	@include text-devider-bottom (var(--red-divider));
 }
 
-.u-text-divider-bottom__green {
+.u-text-divider-bottom__success {
 	@include text-devider-bottom (var(--green-divider));
 }
 
-.u-text-divider-bottom__orange {
+.u-text-divider-bottom__warning {
 	@include text-devider-bottom (var(--orange-divider));
 }
 
@@ -37,15 +37,15 @@
 	color: var(--white);
 }
 
-.u-color-red {
+.u-color__danger {
 	color: var(--red);
 }
 
-.u-color-orange {
+.u-color-warning {
 	color: var(--orange);
 }
 
-.u-color-green {
+.u-color-success {
 	color: var(--green);
 }
 
@@ -62,4 +62,10 @@
 
 .u-small-paragraf {
 	font-size: var(--paragraf-font-size-small);
+}
+
+.u-small-padding {
+	@include min-mq($min-tablet) {
+		padding: .55rem;
+	}
 }

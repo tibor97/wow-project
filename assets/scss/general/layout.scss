@@ -1,31 +1,50 @@
-.l-content-container-wrapper {
-	width:100%;
+.l-container {
+	max-width: 66.6rem;
+	margin: auto;
 	padding: 1.1rem 1.3rem;
+	position: relative;
 
-	@include min-mq($min-tablet) {
-		padding: 1.1rem 5.1rem;
+	&::after {
+		content: "";
+	    height: 1px;
+	    width: 90%;
+	    background-color: var(--silver-dark);
+	    position: absolute;
+	    bottom: 0;
+	    left: 50%;
+	    transform: translateX(-50%);	
 	}
 
-	&.l-button-wrapper {
-		@include min-mq($min-tablet) {
-			padding: 0 5.1rem;
-		}
+	@include min-mq($min-tablet) {
+		padding: 1.1rem 3.1rem;
+	}
+
+	@include min-mq($min-desktop) {
+		width: 100%;
+		padding: 1.1rem 5.1rem;
 	}
 }
 
-.l-button-wrapper {
-	width: 100%;
+.l-row {
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-
-	@include min-mq($min-tablet) {
-		flex-direction: row;
-	}
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 5rem;
 }
 
 .l-table-wrapper {
 	overflow-x: auto;
 	width: 100%;
 	margin: 2rem 0;
+	padding: 0 3rem;
+}
+
+.l-card-wrapper {
+	flex: 0 1 100%;
+	margin-bottom: 1rem;
+
+	@include min-mq($min-tablet) {
+		flex: 0 1 48%;
+	}
 }
