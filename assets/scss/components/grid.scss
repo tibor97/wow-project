@@ -1,10 +1,10 @@
 .c-grid {
-	display: grid;	
+	display: grid;
+	grid-column-gap: var(--size-30);
+	grid-row-gap: var(--size-40);
 }
 
 .c-grid--halves {
-	grid-column-gap: var(--size-30);
-	grid-row-gap: var(--size-40);
 	grid-template-columns: 1fr;
 
 	@include min-mq($min-tablet) {

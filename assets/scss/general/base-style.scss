@@ -91,3 +91,13 @@ ul > li {
 	font-family: var(--secondary-font);
 	color: var(--silver);
 }
+
+a {
+	text-decoration: none;
+	font-weight: var(--font-weight-bold);
+	color: var(--blue);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
