@@ -86,3 +86,8 @@ td {
 		font-size: var(--size-30);
 	}
 }
+
+ul > li {
+	font-family: var(--secondary-font);
+	color: var(--silver);
+}

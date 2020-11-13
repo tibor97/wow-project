@@ -1,0 +1,16 @@
+.c-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid var(--silver-dark);
+    padding: var(--size-30) 0;
+
+    @include min-mq($min-tablet) {
+		padding: var(--size-30)  var(--size-50)  var(--size-65);
+	}
+
+	@include min-mq($min-desktop) {
+		padding: var(--size-30)  var(--size-70)  var(--size-65);
+	}
+}

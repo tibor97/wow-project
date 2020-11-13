@@ -7,7 +7,6 @@
 @import 'general/fonts';
 @import 'general/base-style';
 @import 'general/reset';
-@import 'general/layout.scss';
 
 //components
 @import 'components/three-squares-divider';
@@ -15,7 +14,13 @@
 @import 'components/cards';
 @import 'components/buttons';
 @import 'components/table';
+@import 'components/unordered-list';
+@import 'components/links';
+@import 'components/article';
+@import 'components/grid';
 
 //sections
 @import 'sections/hero-section';
 @import 'sections/affixes-section';
+@import 'sections/considerations-section';
+@import 'sections/footer-section';

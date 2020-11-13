@@ -10,7 +10,7 @@
   }
 }
 
-@mixin text-devider-bottom($color) {
+@mixin text-devider-bottom($color, $left, $translateX) {
 	position: relative;
 
 	&::after {
@@ -20,8 +20,8 @@
 	    background-color: $color;
 	    position: absolute;
 	    bottom: 0;
-	    left: 50%;
-	    transform: translateX(-50%);	
+	    left: $left;
+	    transform: translateX($translateX);	
 	}
 }
 

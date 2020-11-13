@@ -1,0 +1,25 @@
+.c-grid {
+	display: grid;	
+}
+
+.c-grid--halves {
+	grid-column-gap: var(--size-30);
+	grid-row-gap: var(--size-40);
+	grid-template-columns: 1fr;
+
+	@include min-mq($min-tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.c-grid--quarters {
+	grid-template-columns: 1fr;
+
+	@include min-mq($min-tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	@include min-mq($min-desktop) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

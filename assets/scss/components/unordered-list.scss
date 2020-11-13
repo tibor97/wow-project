@@ -1,0 +1,23 @@
+.c-u-list {
+	list-style-type: none;
+	margin-top: var(--size-35);
+}
+
+.c-u-list--bullets > li {
+	font-size: var(--medium);
+	
+	position: relative;
+	padding-left: var(--size-30);
+
+	&:before {
+		content: "";
+		width: 7px;
+		height: 7px;
+		background-color: var(--green);
+		font-weight: bold;
+		display: inline-block;
+		position: absolute;
+		top: var(--size-15);
+		left: 0;
+	}
+}
