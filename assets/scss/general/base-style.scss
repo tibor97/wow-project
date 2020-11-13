@@ -5,67 +5,59 @@ h1, h2, h3, h4, h5 {
 
 h1, .heading-1 {
 	color: var(--white);
-	padding: .2rem;
+	padding: var(--size-10);
+	font-size: var(--size-40);
 
 	@include min-mq($min-tablet) {
-		font-size: 2rem;
+		font-size: var(--size-50);
 	}
 
 	@include min-mq($min-desktop) {
-		font-size: 3.33rem;
+		font-size: var(--size-65);
 	}
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: var(--size-50);
 	color: var(--white);
 
 	@include min-mq($min-desktop) {
-		font-size: 2.77rem;
+		font-size: var(--size-60);
 	}
 }
 
 h4 {
-	font-size: 1.2rem;
+	font-size: var(--size-35);
 	color: var(--silver);
-	padding: 1.55rem 0rem .55rem;
+	padding: var(--size-40) 0 var(--size-15);
 
 	@include min-mq($min-tablet) {
-		font-size: 1.4rem;
-	}
-
-	@include min-mq($min-desktop) {
-		font-size: 1.66rem;
+		font-size: var(--size-40);
 	}
 }
 
 h5 {
-	font-size: 1.2rem;
-	padding: .77rem 0 0;
+	font-size: var(--size-35);
+	padding: var(--size-25) 0 0;
 
 	@include min-mq($min-tablet) {
-		font-size: 1.4rem;
+		font-size: var(--size-40);
 	}
 
-	@include min-mq($min-desktop) {
-		font-size: 1.66rem;
-	}
-
-	&.card-border--title {
-		padding: 1.77rem 0 0;
+	&.u-padding-top {
+		padding: var(--size-45) 0 0;
 	}
 }
 
 p {
 	font-family: var(--secondary-font);
 	color: var(--silver);
-	padding: .55rem;
+	padding: var(--size-15);
 	text-align: center;
-	font-size: var(--paragraf-font-size-small);
+	font-size: var(--font-size-20);
 
 	@include min-mq($min-tablet) {
-		font-size: var(--paragraf-font-size);
-		padding: 1.1rem;
+		padding: var(--size-30);
 	}
 }
 
@@ -76,7 +68,7 @@ button {
 	transition: opacity .4s;
 
 	&:hover {
-		opacity: 0.8;
+		opacity: .8;
 	}
 }
 
@@ -88,9 +80,9 @@ table {
 td {
 	font-weight: var(--font-weight-medium);
 	font-family: var(--secondary-font);
-	font-size: var(--paragraf-font-size-small);
+	font-size: var(--size-25);
 
 	@include min-mq($min-tablet) {
-		font-size: var(--paragraf-font-size);
+		font-size: var(--size-30);
 	}
 }

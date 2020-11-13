@@ -1,27 +1,21 @@
 .c-button {
-	display: inline-block;
-	width: 100%;
-	font-size: var(--paragraf-font-size);
+	display: block;
+	font-size: var(--size-30);
 	//min-width: 13rem;
-	margin: .66rem 0;
-
+	
 	@include min-mq($min-tablet) {
-		width: auto;
-		margin: .66rem;
+		display: inline-block;
 	}
+}
 
-	&:nth-of-type(1) {
-		background-color: var(--green);
-		padding: .55rem 1.83rem;
-	}
+.c-button--danger {
+	@include button(var(--red));
+}
 
-	&:nth-of-type(2) {
-		background-color: var(--orange);
-		padding: .55rem 1rem;
-	}
+.c-button--warning {
+	@include button(var(--orange));
+}
 
-	&:nth-of-type(3) {
-		background-color: var(--red);
-		padding: .55rem 1.83rem;
-	}
+.c-button--success {
+	@include button(var(--green));
 }

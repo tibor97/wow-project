@@ -6,9 +6,13 @@
 }
 
 html {
-	font-size: var(--base-font-size);
+	font-size: var(--base-size-px-small);
+	
+	@include min-mq($min-tablet) {
+		font-size: var(--base-size-px);
+	}
 }
 
 body {
-	font-size: 1rem;
+	font-size: var(--size-30);
 }

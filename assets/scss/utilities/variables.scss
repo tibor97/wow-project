@@ -3,12 +3,25 @@
 --primary-font: 'Cairo', sans-serif;
 --secondary-font: 'Roboto', sans-serif;
 
-//font-sizes
---base-font-size: 18px;
+//sizes
+--base-size-px: 18px;
+--base-size-px-small: 16px;
 
---paragraf-font-size: 1rem;
---paragraf-font-size-small: .77rem;
---paragraf-font-size-extra-small: .66rem;
+--size-5: .1rem;
+--size-10: .25rem;
+--size-15: .55rem;
+--size-20: .66rem;
+--size-25: .75rem;
+--size-30: 1rem;
+--size-35: 1.25rem;
+--size-40: 1.55rem;
+--size-45: 1.75rem;
+--size-50: 2rem;
+--size-55: 2.5rem;
+--size-60: 2.77rem;
+--size-65: 3.33rem;
+--size-70: 4rem;
+--size-75: 4.7rem;
 
 //font weight
 --font-weight-bold: 700;

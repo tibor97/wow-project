@@ -1,29 +1,25 @@
 .c-square-divider {
-	width: 0.61rem;
-	height: 0.61rem;
+	width: var(--size-20);
+	height: var(--size-20);
 	background-color: var(--orange);
 	position: relative;
-
-	@include min-mq($min-tablet) {
-		margin: 0.55rem 0;
-	}
 
 	&::before, 
 	&::after {
 		content: "";
 		position: absolute;
 		top: 0;
-		width: 0.61rem;
-		height: 0.61rem;
+		width: var(--size-20);
+		height: var(--size-20);
 	}
 
 	&::before {
-		left: 0.61rem;
+		left: var(--size-20);
 		background-color: var(--red);
 	}
 
 	&::after {
-		right: 0.61rem;
+		right: var(--size-20);
 		background-color: var(--green);
 	}
 }

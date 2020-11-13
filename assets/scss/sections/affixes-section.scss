@@ -1,31 +1,27 @@
-.affixes--bg-wrapper {
+.affixes--bg-image {
 	background-image: url("../images/bg-image-affixes-section.jpg");
 	background-size: cover;
-	padding: 4.1rem 0 0;
 }
 
-.affixes--bg-wrapper__gradient {
+.affixes--bg-gradient {
 	background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
 }
 
-.c-affixes-article {
-	// max-width: 66.6rem;
-	// margin: auto;
+.c-article__affixes {
     display: flex;
     flex-direction: column;
-    //justify-content: center;
     align-items: center;
-    //padding: 1rem 0;
     position: relative;
 
-	// &::after {
-	// 	content: "";
-	//     height: 1px;
-	//     width: 90%;
-	//     background-color: var(--silver-dark);
-	//     position: absolute;
-	//     bottom: 0;
-	//     left: 50%;
-	//     transform: translateX(-50%);	
-	// }
+    border-bottom: 1px solid var(--silver-dark);
+    margin: 0 var(--size-30);
+    padding: var(--size-30) 0;
+
+    @include min-mq($min-tablet) {
+		padding: var(--size-30)  var(--size-50)  var(--size-65);
+	}
+
+	@include min-mq($min-desktop) {
+		padding: var(--size-30)  var(--size-70)  var(--size-65);
+	}
 }
