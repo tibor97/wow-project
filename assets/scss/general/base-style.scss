@@ -1,30 +1,88 @@
-h1, h2, h3 {
+h1, h2, h3, h4, h5 {
 	font-family: var(--primary-font);
+	text-align: center;
 }
 
 h1, .heading-1 {
 	color: var(--white);
-	text-align: center;
-	padding: .2rem;
+	padding: var(--size-10);
+	font-size: var(--size-40);
 
 	@include min-mq($min-tablet) {
-		font-size: var(--h1-font-size-tablet);
+		font-size: var(--size-50);
 	}
 
 	@include min-mq($min-desktop) {
-		font-size: var(--h1-font-size-desktop);
+		font-size: var(--size-65);
+	}
+}
+
+h3 {
+	font-size: var(--size-50);
+	color: var(--white);
+
+	@include min-mq($min-desktop) {
+		font-size: var(--size-60);
+	}
+}
+
+h4 {
+	font-size: var(--size-35);
+	color: var(--silver);
+	padding: var(--size-40) 0 var(--size-15);
+
+	@include min-mq($min-tablet) {
+		font-size: var(--size-40);
+	}
+}
+
+h5 {
+	font-size: var(--size-35);
+	padding: var(--size-25) 0 0;
+
+	@include min-mq($min-tablet) {
+		font-size: var(--size-40);
+	}
+
+	&.u-padding-top {
+		padding: var(--size-45) 0 0;
 	}
 }
 
 p {
 	font-family: var(--secondary-font);
 	color: var(--silver);
-	padding: .77rem;
+	padding: var(--size-15);
 	text-align: center;
-	font-size: var(--paragraf-font-size-small);
+	font-size: var(--font-size-20);
 
 	@include min-mq($min-tablet) {
-		font-size: var(--paragraf-font-size);
-		padding: 1.1rem;
+		padding: var(--size-30);
+	}
+}
+
+button {
+	border: none;
+	color: var(--white);
+	cursor: pointer;
+	transition: opacity .4s;
+
+	&:hover {
+		opacity: .8;
+	}
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td {
+	font-weight: var(--font-weight-medium);
+	font-family: var(--secondary-font);
+	font-size: var(--size-25);
+
+	@include min-mq($min-tablet) {
+		font-size: var(--size-30);
 	}
 }

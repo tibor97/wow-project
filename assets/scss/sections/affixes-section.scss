@@ -1,0 +1,27 @@
+.affixes--bg-image {
+	background-image: url("../images/bg-image-affixes-section.jpg");
+	background-size: cover;
+}
+
+.affixes--bg-gradient {
+	background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
+}
+
+.c-article__affixes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    border-bottom: 1px solid var(--silver-dark);
+    margin: 0 var(--size-30);
+    padding: var(--size-30) 0;
+
+    @include min-mq($min-tablet) {
+		padding: var(--size-30)  var(--size-50)  var(--size-65);
+	}
+
+	@include min-mq($min-desktop) {
+		padding: var(--size-30)  var(--size-70)  var(--size-65);
+	}
+}

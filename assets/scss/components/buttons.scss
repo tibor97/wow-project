@@ -1,0 +1,21 @@
+.c-button {
+	display: block;
+	font-size: var(--size-30);
+	//min-width: 13rem;
+	
+	@include min-mq($min-tablet) {
+		display: inline-block;
+	}
+}
+
+.c-button--danger {
+	@include button(var(--red));
+}
+
+.c-button--warning {
+	@include button(var(--orange));
+}
+
+.c-button--success {
+	@include button(var(--green));
+}

@@ -1,10 +1,11 @@
+//dividers
 .u-vertical-divider {
 	color: var(--silver);
 	position: relative;
-	padding-right: .25rem;
+	padding-right: var(--size-10);
 
 	@include min-mq($min-desktop) {
-		padding-right: .5rem;
+		padding-right: var(--size-15);
 	}
 
 	&::after {
@@ -19,17 +20,53 @@
 	}
 }
 
-.u-text-divider-bottom {
-	position: relative;
+.u-text-divider-bottom--danger {
+	@include text-devider-bottom (var(--red-divider));
+}
 
-	&::after {
-		content: "";
-	    height: 1px;
-	    width: 4.7rem;
-	    background-color: var(--red);
-	    position: absolute;
-	    bottom: 0;
-	    left: 50%;
-	    transform: translateX(-50%);	
-	}
+.u-text-divider-bottom--success {
+	@include text-devider-bottom (var(--green-divider));
+}
+
+.u-text-divider-bottom--warning {
+	@include text-devider-bottom (var(--orange-divider));
+}
+
+//colors
+.u-color--danger {
+	color: var(--red);
+}
+
+.u-color--warning {
+	color: var(--orange);
+}
+
+.u-color--success {
+	color: var(--green);
+}
+
+.u-text--white {
+	color: var(--white);
+}
+
+//display properties
+.u-hidden {
+	visibility: hidden;
+}
+
+//font style
+.u-text--italic {
+	font-style: italic;
+	font-weight: var(--font-weight-medium);
+}
+
+//font size
+.u-text--small {
+	font-size: var(--size-25);
+}
+
+.u-container {
+	max-width: 66.6rem;
+	margin-left: auto;
+	margin-right: auto;
 }
