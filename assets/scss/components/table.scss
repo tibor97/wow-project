@@ -8,12 +8,12 @@
 	}
 }
 
-.c-table__header {
+.c-table > thead {
 	background-color: var(--green);
 	color: var(--grey-very-dark);
 }
 
-.c-table__body {
+.c-table > tbody {
 	color: var(--white);
 
 	tr:nth-of-type(even) {
@@ -29,7 +29,7 @@
 	}
 }
 
-.c-table__cell {
+.c-table > tbody > tr > td, .c-table > thead > tr > td {
 	padding: var(--size-10) var(--size-30);
 	width: 25%;
 
