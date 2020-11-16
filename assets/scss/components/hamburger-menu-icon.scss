@@ -1,18 +1,18 @@
 .c-hamburger-menu {
 	display: block;
-	height: 60px;
-	width: 70px;
-	padding: 20px;
+	height: var(--size-65);
+	width: var(--size-70);
+	padding: var(--size-30);
 	position: relative;
 	z-index: 3;
 	margin-left: auto;
-	background-color: transparent;
+	background-color: var(--transparent);
 
 	&::before,
 	&::after {
 		content: '';
 	    display: block;
-	    width: 30px;
+	    width: var(--size-50);
 	    height: 2px;
 	    position: absolute;
 	    background-color: var(--white);
@@ -47,10 +47,10 @@
 	}
 
 	&::before {
-		transform: rotate(-45deg) translate(-5px, 4px);
+		transform: rotate(-45deg) translate(calc(-1 * (var(--size-11))), var(--size-9));
 	}
 		
 	&::after {
-		transform: rotate(45deg) translate(-4px, -5px);
+		transform: rotate(45deg) translate(calc(-1 * (var(--size-9))), calc(-1 * (var(--size-11))));
 	}
 }
