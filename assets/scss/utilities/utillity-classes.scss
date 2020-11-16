@@ -53,6 +53,10 @@
 	color: var(--white);
 }
 
+.u-text--black {
+	color: var(--black);
+}
+
 //display properties
 .u-hidden {
 	visibility: hidden;
@@ -90,4 +94,14 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0 var(--size-30);
+}
+
+.u-pad-0--mobile {
+	@include max-mq ($min-tablet) {
+		padding: 0;
+	}
+}
+
+.u-padd-top {
+	padding-top: var(--size-65);
 }

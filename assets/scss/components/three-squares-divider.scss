@@ -14,12 +14,12 @@
 	}
 
 	&::before {
-		left: var(--size-20);
+		right: var(--size-20);
 		background-color: var(--red);
 	}
 
 	&::after {
-		right: var(--size-20);
+		left: var(--size-20);
 		background-color: var(--green);
 	}
 }

@@ -8,7 +8,9 @@
 --base-size-px-small: 16px;
 
 --size-5: .1rem;
+--size-9: .222rem;
 --size-10: .25rem;
+--size-11: .277rem;
 --size-15: .55rem;
 --size-20: .66rem;
 --size-25: .75rem;
@@ -29,8 +31,11 @@
 --font-weight-normal: 400;
 
 //colors
+--transparent: transparent;
+
 --white: #fff; //headings
 --black: #000;
+--black--transparent: rgba(0, 0, 0, .8);
 
 --silver: #BCBCBC; //for p text mainly
 --silver-dark: #6F6F6F; //for subsection devider, bg-color of odd rows in table

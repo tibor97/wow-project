@@ -87,6 +87,10 @@ td {
 	}
 }
 
+ul {
+	list-style-type: none;
+}
+
 ul > li {
 	font-family: var(--secondary-font);
 	color: var(--silver);
