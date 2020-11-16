@@ -6,6 +6,7 @@
 }
 
 html {
+	scroll-behavior: smooth;
 	font-size: var(--base-size-px-small);
 	
 	@include min-mq($min-tablet) {

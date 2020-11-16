@@ -8,7 +8,31 @@
 </head>
 
 <body>
-	<section class="c-section c-section--hero">
+	<div class="c-loader">
+		<div class="c-square-divider c-square-divider--animation"></div>
+	</div>
+	<header>
+		<div class="u-container u-pad-0--mobile">
+			<nav>
+				<ul class="c-navbar-list">
+					<li class="c-navbar-list-item">
+						<a class="c-navbar-link u-text--white" href="#section--hero">Home</a>
+					</li>
+					<li class="c-navbar-list-item">
+						<a class="c-navbar-link u-text--white" href="#section--affixes">Affixes</a>
+					</li>
+					<li class="c-navbar-list-item">
+						<a class="c-navbar-link u-text--white" href="#section--group-considerations">Group Considerations</a>
+					</li>
+				</ul>
+			</nav>
+			<button class="c-hamburger-menu">
+				<span class="c-hamburger-menu--middle-line"></span>
+			</button>
+		</div>
+	</header>
+
+	<section class="c-section c-section--hero" id="section--hero">
 		<p class="u-text-divider-bottom-center--danger">What garbage affixes do i have to deal with this week?</p>
 		<h1><strong class="u-vertical-divider">US</strong> TYRANNICAL TEEMING VOLCANIC BEGUILING</h1>
 		<h2 class="heading-1"><strong class="u-vertical-divider">EU</strong> TYRANNICAL TEEMING VOLCANIC BEGUILING</h2>
@@ -17,8 +41,8 @@
 		<span class="c-scroll-indicator">SCROLL</span>
 	</section>
 
-	<section class="c-section">
-		<div class="affixes--bg-image">
+	<section class="c-section" id="section--affixes">
+		<div class="affixes--bg-image u-padd-top">
 			<div class="u-container">
 				<article class="c-article">
 					<h3>AFFIXES</h3>
@@ -175,7 +199,7 @@
 		</div>
 	</section>
 
-	<section class="c-section c-section--considerations">
+	<section class="c-section c-section--considerations u-padd-top" id="section--group-considerations">
 		<div class="u-container">
 			<article class="c-article">
 				<h3>GROUP CONSIDERATIONS</h3>
@@ -225,6 +249,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="script.js"></script>
 </body>
 
 </html>

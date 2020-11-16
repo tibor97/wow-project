@@ -29,8 +29,11 @@
 --font-weight-normal: 400;
 
 //colors
+--transparent: transparent;
+
 --white: #fff; //headings
 --black: #000;
+--black--transparent: rgba(0, 0, 0, .8);
 
 --silver: #BCBCBC; //for p text mainly
 --silver-dark: #6F6F6F; //for subsection devider, bg-color of odd rows in table
